@@ -1250,3 +1250,9 @@ input[type="text"]:focus {
 {
   text-align: left;
 }
+.booking-next-btn:disabled {
+  background: #e9ecef;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
