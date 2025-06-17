@@ -1,0 +1,109 @@
+    /* blueTheme.css */
+
+    /* Primary blue theme colors */
+    :root {
+        --primary-blue: #007bff;
+        --primary-light-blue: #00c6ff;
+        --primary-dark-blue: #0056b3;
+        --text-on-blue: #ffffff;
+    }
+
+    /* Buttons */
+    .btn,
+    .btn-primary,
+    .btn-secondary {
+        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%) !important;
+        color: var(--text-on-blue) !important;
+        border: none !important;
+        box-shadow: 0 4px 20px rgba(0, 123, 255, 0.15);
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--primary-light-blue) 100%) !important;
+        box-shadow: 0 6px 24px rgba(0, 123, 255, 0.25);
+        transform: translateY(-1px);
+    }
+
+    /* Navigation and Header */
+    .navbar,
+    .header,
+    .hero {
+        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%) !important;
+        color: var(--text-on-blue) !important;
+        box-shadow: 0 2px 12px rgba(0, 123, 255, 0.15);
+    }
+
+    /* Content Sections */
+    .section-blue,
+    .main-content,
+    .feature-box {
+        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%) !important;
+        color: var(--text-on-blue) !important;
+    }
+
+    /* Cards and Containers */
+    .card-blue {
+        border: 1px solid rgba(0, 123, 255, 0.1);
+        box-shadow: 0 4px 16px rgba(0, 123, 255, 0.08);
+    }
+
+    .card-blue .card-header {
+        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%) !important;
+        color: var(--text-on-blue) !important;
+    }
+
+    /* Forms and Inputs */
+    .form-control:focus {
+        border-color: var(--primary-blue);
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    /* Pagination */
+    .pagination .page-item .page-link {
+        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%) !important;
+        color: var(--text-on-blue) !important;
+        border: none !important;
+        box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+    }
+
+    .pagination .page-item.active .page-link,
+    .pagination .page-item .page-link:hover {
+        background: linear-gradient(135deg, var(--primary-dark-blue) 0%, var(--primary-light-blue) 100%) !important;
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.25);
+    }
+
+    /* Loading States */
+    .loading,
+    .loading-container {
+        background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-light-blue) 100%) !important;
+        color: var(--text-on-blue) !important;
+    }
+
+    /* Links */
+    a.blue-link {
+        color: var(--primary-blue);
+        transition: color 0.3s ease;
+    }
+
+    a.blue-link:hover {
+        color: var(--primary-dark-blue);
+        text-decoration: none;
+    }
+    footer.footer {
+        background-color: var(--primary-dark-blue) !important;
+        color: white !important;
+    }   
+    .footer-bottom{
+        background-color: var(--primary-dark-blue) !important;
+        color: white !important;
+    }
+    .footer-bottom a{
+        color: white !important;
+    }
+    .three-columns
+    {
+        color: black !important;
+    }

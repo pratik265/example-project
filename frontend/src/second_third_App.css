@@ -1,0 +1,835 @@
+/* Global Styles for Second Template */
+body.SecondTemplate {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: #e3f2fd !important; /* Light Blue for Second Template */
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+body.SecondTemplate .hero {
+  background: linear-gradient(135deg, var(--main-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.SecondTemplate .hero > .container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+body.SecondTemplate .hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+body.SecondTemplate .hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  color: #e0f7f4;
+}
+
+body.SecondTemplate .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body.SecondTemplate .btn {
+  background: var(--button-primary-color);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+body.SecondTemplate .btn-primary {
+  background: var(--button-primary-color);
+  color: white;
+}
+
+body.SecondTemplate .btn-secondary {
+  background: var(--button-primary-color);
+  color: white;
+  border: none;
+}
+
+body.SecondTemplate .btn:hover {
+  background: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 191, 166, 0.3);
+}
+
+/* Cards Grid */
+body.SecondTemplate .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+body.SecondTemplate .card {
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  border: 1px solid var(--border-color);
+}
+
+body.SecondTemplate .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+body.SecondTemplate .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+body.SecondTemplate .card h3 {
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+body.SecondTemplate .card p {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Doctor Card Specific */
+body.SecondTemplate .doctor-card {
+  background: var(--bg-lighter);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+body.SecondTemplate .doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+body.SecondTemplate .doctor-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border: 4px solid #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.SecondTemplate .doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.SecondTemplate .doctor-letter-avatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+body.SecondTemplate .doctor-card h3 {
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  font-size: 1.5rem;
+}
+
+body.SecondTemplate .doctor-description {
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  flex: 1;
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+body.SecondTemplate .team-id {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+body.SecondTemplate .doctor-card .btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+body.SecondTemplate .doctor-card .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  background: var(--hover-color);
+}
+
+/* Treatment Card */
+body.SecondTemplate .treatment-card {
+  position: relative;
+}
+
+body.SecondTemplate .price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff6b6b;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+body.SecondTemplate .form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 191, 166, 0.1);
+}
+
+body.SecondTemplate .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+body.SecondTemplate .form-group input,
+body.SecondTemplate .form-group textarea,
+body.SecondTemplate .form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+body.SecondTemplate .form-group input:focus,
+body.SecondTemplate .form-group textarea:focus,
+body.SecondTemplate .form-group select:focus {
+  border-color: var(--main-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 191, 166, 0.25);
+}
+
+body.SecondTemplate .form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Footer */
+body.SecondTemplate .footer {
+  background: var(--text-dark);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+body.SecondTemplate .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+body.SecondTemplate .footer-section {
+  text-align: left;
+}
+
+body.SecondTemplate .footer-section h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+body.SecondTemplate .footer-section p,
+body.SecondTemplate .footer-section a {
+  color: #a0aec0;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+body.SecondTemplate .footer-section a:hover {
+  color: var(--main-color);
+}
+
+body.SecondTemplate .footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #4a5568;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+/* Detail Page Styles (DoctorDetail, ClinicDetail) */
+body.SecondTemplate .detail-page {
+  padding: 2rem 0;
+  background: var(--bg-light);
+  min-height: 80vh;
+}
+
+body.SecondTemplate .detail-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+body.SecondTemplate .detail-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--main-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+body.SecondTemplate .detail-info {
+  flex-grow: 1;
+}
+
+body.SecondTemplate .detail-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+body.SecondTemplate .clinic-info {
+  background: var(--bg-lighter);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+body.SecondTemplate .clinic-info h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+body.SecondTemplate .clinic-info p,
+body.SecondTemplate .clinic-info ul li {
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+body.SecondTemplate .clinic-info strong {
+  color: var(--text-dark);
+}
+
+body.SecondTemplate .clinic-info a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+body.SecondTemplate .clinic-info a:hover {
+  text-decoration: underline;
+}
+
+body.SecondTemplate .services-list {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+body.SecondTemplate .service-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.3rem 0.7rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Loading and Error States */
+body.SecondTemplate .loading-container,
+body.SecondTemplate .error-container,
+body.SecondTemplate .success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+body.SecondTemplate .loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--main-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+body.SecondTemplate .error-icon {
+  font-size: 3rem;
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+body.SecondTemplate .contact-section {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.SecondTemplate .contact-section h2 {
+  color: #2d3748;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+body.SecondTemplate .contact-section p {
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+body.SecondTemplate .contact-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+body.SecondTemplate .contact-actions .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 480px) {
+  body.SecondTemplate .clinics-page .section-title {
+    font-size: 1.8rem;
+  }
+
+  body.SecondTemplate .contact-section {
+    padding: 2rem;
+  }
+
+  body.SecondTemplate .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  body.SecondTemplate .contact-actions .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* React Date Picker Overrides */
+body.SecondTemplate .react-datepicker-wrapper {
+  width: 100%;
+}
+
+body.SecondTemplate .react-datepicker {
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+body.SecondTemplate .react-datepicker__header {
+  background-color: var(--main-color);
+  color: white;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+body.SecondTemplate .react-datepicker__navigation--previous {
+  border-right-color: white;
+}
+
+body.SecondTemplate .react-datepicker__navigation--next {
+  border-left-color: white;
+}
+
+body.SecondTemplate .react-datepicker__current-month,
+body.SecondTemplate .react-datepicker__day-name {
+  color: white;
+}
+
+body.SecondTemplate .react-datepicker__day {
+  color: var(--text-dark);
+}
+
+body.SecondTemplate .react-datepicker__day:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+body.SecondTemplate .react-datepicker__day--selected {
+  background-color: var(--main-color);
+  color: white;
+}
+
+body.SecondTemplate .react-datepicker__day--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Treatment Booking Specific Styles */
+body.SecondTemplate .treatment-booking .container {
+  padding: 2rem 1rem;
+}
+
+body.SecondTemplate .booking-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1.5fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+body.SecondTemplate .calendar-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.SecondTemplate .time-slots-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.SecondTemplate .time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.75rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+body.SecondTemplate .time-slot-button {
+  padding: 12px 16px;
+  background: #ffffff;
+  color: #495057;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  outline: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.SecondTemplate .time-slot-button:hover {
+  border-color: var(--main-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 191, 166, 0.2);
+}
+
+body.SecondTemplate .time-slot-button.selected {
+  background: var(--main-color);
+  color: white;
+  border-color: var(--main-color);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+body.SecondTemplate .booking-step-active {
+  animation: pulse 0.8s infinite;
+}
+
+@media print {
+  body.SecondTemplate .btn, body.SecondTemplate .nav, body.SecondTemplate .header, body.SecondTemplate .footer {
+    display: none;
+  }
+
+  body.SecondTemplate .treatment-booking,
+  body.SecondTemplate .container {
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: none !important;
+  }
+}
+
+/* Input Focus Styles (shared across relevant inputs) */
+body.SecondTemplate input[type="text"]:focus,
+body.SecondTemplate input[type="email"]:focus,
+body.SecondTemplate input[type="password"]:focus,
+body.SecondTemplate input[type="tel"]:focus,
+body.SecondTemplate textarea:focus,
+body.SecondTemplate select:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 3px rgba(0, 191, 166, 0.25);
+}
+
+/* Clinic Card Specific */
+body.SecondTemplate .clinic-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%; /* Ensure cards in a row have consistent height */
+}
+
+body.SecondTemplate .clinic-image {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+body.SecondTemplate .clinic-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.SecondTemplate .clinic-card:hover .clinic-image img {
+  transform: scale(1.05);
+}
+
+body.SecondTemplate .branch-letter-avatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+body.SecondTemplate .clinic-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+body.SecondTemplate .clinic-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+body.SecondTemplate .clinic-address {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+body.SecondTemplate .clinic-description {
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+body.SecondTemplate .clinic-info {
+  background: #f7fafc;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+body.SecondTemplate .clinic-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 0.75rem;
+}
+
+body.SecondTemplate .working-hours {
+  display: grid;
+  gap: 0.5rem;
+}
+
+body.SecondTemplate .working-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.75rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+body.SecondTemplate .working-day:hover {
+  border-color: var(--main-color);
+  box-shadow: 0 2px 8px rgba(0, 191, 166, 0.1);
+}
+
+body.SecondTemplate .working-day strong {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+body.SecondTemplate .working-day span {
+  color: #4a5568;
+}
+
+body.SecondTemplate .card-actions {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+body.SecondTemplate .card-actions .btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+body.SecondTemplate .card-actions .btn-primary {
+  background: var(--button-primary-color);
+  color: white;
+}
+
+body.SecondTemplate .card-actions .btn-secondary {
+  background: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+body.SecondTemplate .card-actions .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 768px) {
+  body.SecondTemplate .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body.SecondTemplate .clinic-card {
+    margin-bottom: 1.5rem;
+  }
+
+  body.SecondTemplate .booking-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.SecondTemplate .booking-next-btn {
+  background: var(--main-color);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+body.SecondTemplate .booking-next-btn:hover {
+  background: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 191, 166, 0.3);
+}
+
+body.SecondTemplate .booking-next-btn:disabled {
+  background: #e2e8f0;
+  color: #a0aec0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* RTL Support for Second Template */
+body.SecondTemplate.rtl {
+  direction: rtl;
+}
+
+body.SecondTemplate.ltr {
+  direction: ltr;
+}
